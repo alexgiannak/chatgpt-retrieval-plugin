@@ -35,8 +35,11 @@ pgvector = "^0.1.7"
 psycopg2cffi = {version = "^2.9.0", optional = true}
 loguru = "^0.7.0"
 elasticsearch = "8.8.2"
+<<<<<<< HEAD
 pykx = "^1.6.3"
 kdbai_client = "^0.1.1"
+=======
+>>>>>>> main
 pymongo = "^4.3.3"
 
 [tool.poetry.scripts]
