@@ -127,13 +127,16 @@ class KDBAIDataStore(DataStore):
         out = []
         for query in queries:
             try:
+                logger.info(self._table.schema())
+                logger.info(len(query.embedding))
+                print(self._table.search(vectors=[query.embedding], n=query.top_k))
                 resdf = self._table.search(vectors=[query.embedding], n=query.top_k)[0]
             except Exception as e:
                 logger.exception(f"Error while processing queries.")
                 raise e
             
             docs = []
-            for result in resdf.to_dict(orient='record'):
+            for result in resdf.to_dict(orient='records'):
                 docs.append(DocumentChunkWithScore(
                     id=result['document_id'],
                     text=result['text'],
