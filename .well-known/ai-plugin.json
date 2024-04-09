@@ -10,10 +10,10 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://dolphin-app-qw6no.ondigitalocean.app/.well-known/openapi.yaml",
+    "url": "https://seal-app-hnjm2.ondigitalocean.app/.well-known/openapi.yaml",
     "has_user_authentication": false
   },
   "logo_url": "https://your-app-url.com/.well-known/logo.png",
   "contact_email": "hello@contact.com", 
-  "legal_info_url": "https://dolphin-app-qw6no.ondigitalocean.app/legal-info"
+  "legal_info_url": "https://seal-app-hnjm2.ondigitalocean.app/legal-info"
 }
